@@ -9,11 +9,8 @@ ACTIVE ANTIVIRUS - Method 2
 If the AntiVirus flags the .exe, it's because the script was written in .bat. Copy paste this code in a notepad & run it as .bat for the same effect. Note that it is absolutely safe to use and doesn't affect anything.
 
 @echo off
-
 title Macro Scanner - By Technostein
-
 color 3 
-
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 
 if exist "%localappdata%\LGHUB" (
